@@ -14,12 +14,12 @@
     <img src="yarmalight_logo.jpg.png" alt="FC Yarmalight Logo" class="logo">
     <nav>
         <ul>
-            <li><a href="#"><i class="fas fa-home icon"></i> Home</a></li>
-            <li><a href="#"><i class="fas fa-newspaper icon"></i> News</a></li>
-            <li><a href="#"><i class="fas fa-calendar-alt icon"></i> Fixtures</a></li>
-            <li><a href="#"><i class="fas fa-users icon"></i> Team</a></li>
-            <li><a href="#"><i class="fas fa-image icon"></i> Gallery</a></li>
-            <li><a href="#"><i class="fas fa-envelope icon"></i> Contact</a></li>
+            <li><a href="#home"><i class="fas fa-home icon"></i> Home</a></li>
+            <li><a href="#news"><i class="fas fa-newspaper icon"></i> News</a></li>
+            <li><a href="#fixtures"><i class="fas fa-calendar-alt icon"></i> Fixtures</a></li>
+            <li><a href="#team"><i class="fas fa-users icon"></i> Team</a></li>
+            <li><a href="#gallery"><i class="fas fa-image icon"></i> Gallery</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope icon"></i> Contact</a></li>
         </ul>
     </nav>
     <div class="mobile-nav">
@@ -28,34 +28,54 @@
 </header>
 <div class="sidebar" id="sidebar">
     <ul>
-        <li><a href="#"><i class="fas fa-home icon"></i> Home</a></li>
-        <li><a href="#"><i class="fas fa-newspaper icon"></i> News</a></li>
-        <li><a href="#"><i class="fas fa-calendar-alt icon"></i> Fixtures</a></li>
-        <li><a href="#"><i class="fas fa-users icon"></i> Team</a></li>
-        <li><a href="#"><i class="fas fa-image icon"></i> Gallery</a></li>
-        <li><a href="#"><i class="fas fa-envelope icon"></i> Contact</a></li>
+        <li><a href="#home"><i class="fas fa-home icon"></i> Home</a></li>
+        <li><a href="#news"><i class="fas fa-newspaper icon"></i> News</a></li>
+        <li><a href="#fixtures"><i class="fas fa-calendar-alt icon"></i> Fixtures</a></li>
+        <li><a href="#team"><i class="fas fa-users icon"></i> Team</a></li>
+        <li><a href="#gallery"><i class="fas fa-image icon"></i> Gallery</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope icon"></i> Contact</a></li>
     </ul>
     <button class="login-button"><i class="fas fa-user icon"></i> Login/Register</button>
 </div>
 <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
-      
 
 <main>
-    <section class="welcome">
+    <section id="home" class="welcome">
         <div class="content">
             <h1>Welcome to FC Yarmalight</h1>
             <p>One Team, One Dream.....</p>
-            <button class="learn-more">Learn More</button>
+            <button class="learn-more">Join Us</button>
         </div>
     </section>
-    <section class="about">
-        <h2>About Us</h2>
-        <p>FC Yarmalight is dedicated to fostering young talent and promoting the sport of football...</p>
+
+    <section id="news" class="news">
+        <div class="news-container">
+            <h2>Latest News</h2>
+            <div class="news-item">
+                <img src="news1.jpg" alt="News Image 1">
+                <div class="news-content">
+                    <h3>News Headline 1</h3>
+                    <p>Short description of the news content goes here. This is a brief summary to attract readers.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="news2.jpg" alt="News Image 2">
+                <div class="news-content">
+                    <h3>News Headline 2</h3>
+                    <p>Short description of the news content goes here. This is a brief summary to attract readers.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <img src="news3.jpg" alt="News Image 3">
+                <div class="news-content">
+                    <h3>News Headline 3</h3>
+                    <p>Short description of the news content goes here. This is a brief summary to attract readers.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
 </main>
 
-    <footer>
-        <p>&copy; 2024 FC Yarmalight. All rights reserved.</p>
-    </footer>
 </body>
 </html>
