@@ -105,12 +105,6 @@ button.learn-more:hover {
     background-color: #f0e68c; /* Slightly darker yellow for hover effect */
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
 
 /* Sidebar styles */
 /* Sidebar styles */
@@ -150,13 +144,13 @@ footer {
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: yellow; /* Stylish divider color */
+    background-color: rgb(255, 255, 69); /* Stylish divider color */
     transform: scaleY(0.5);
 }
 
 .sidebar ul li a {
     text-decoration: none;
-    color: green; /* Club color */
+    color: rgb(19, 80, 19); /* Club color */
     font-weight: bold;
     display: block;
     padding: 10px;
@@ -242,5 +236,80 @@ footer {
         position: absolute;
         right: 20px;
         top: 15px;
+    }
+}
+
+/* News Section Styles */
+.news {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.news-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.news h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Verdana', sans-serif;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+}
+
+.news-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.news-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Verdana', sans-serif;
+}
+
+.news-content p {
+    font-size: 1em;
+    color: #666;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .news-item {
+        flex-direction: row;
+    }
+
+    .news-item img {
+        width: 50%;
+    }
+
+    .news-content {
+        width: 50%;
+        padding: 20px 30px;
     }
 }
