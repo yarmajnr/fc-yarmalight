@@ -1,0 +1,246 @@
+/* Basic styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    text-align: center; /* Center align text by default */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 5px solid rgb(33, 61, 0); /* Adds the red border at the bottom */
+}
+
+header .logo {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: yellow; /* Background color for the nav bar */
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: darkgreen;
+}
+
+.mobile-nav {
+    display: none; /* Hide the mobile nav by default */
+}
+
+#hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hide the hamburger icon by default */
+}
+
+/* Home Section Styles */
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('backgroundimage.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+}
+
+.welcome .content {
+    background: rgba(0, 0, 0, 0.5); /* Black background with opacity for better readability */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.welcome h1 {
+    font-size: 3em;
+    color: yellow; /* Light Yellow text color */
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.welcome p {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+button.learn-more {
+    padding: 15px 30px;
+    background-color: lightyellow; /* Light Yellow background */
+    color: green; /* Green text color */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 25px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    font-family: 'Verdana', sans-serif;
+}
+
+button.learn-more:hover {
+    background-color: #f0e68c; /* Slightly darker yellow for hover effect */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Sidebar styles */
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: white; /* White background */
+    color: green; /* Club color */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    padding: 20px;
+    z-index: 2000;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: yellow; /* Stylish divider color */
+    transform: scaleY(0.5);
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: green; /* Club color */
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 0, 0.1); /* Slightly transparent yellow background */
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a:hover {
+    background-color: yellow; /* Club color */
+    color: green; /* Club color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar ul li a .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.login-button {
+    padding: 15px;
+    width: 100%;
+    background-color: yellow; /* Club color */
+    color: green; /* Club color */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: auto; /* Ensure it stays at the bottom */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button:hover {
+    background-color: #f0e68c; /* Slightly darker yellow for hover effect */
+    color: green; /* Club color */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-button .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar.show {
+    transform: translateX(0);
+}
+
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the desktop nav */
+    }
+
+    .mobile-nav {
+        display: block; /* Show the mobile nav */
+    }
+
+    #hamburger {
+        display: block; /* Show the hamburger icon */
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+}
