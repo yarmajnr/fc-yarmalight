@@ -1,9 +1,8 @@
-/* Basic styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #fbff00;
     text-align: center; /* Center align text by default */
 }
 
@@ -11,13 +10,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px 20px;
     border-bottom: 5px solid rgb(33, 61, 0); /* Adds the red border at the bottom */
 }
 
 header .logo {
-    height: 100px;
+    height: 150px;
 }
 
 nav ul {
@@ -36,7 +35,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: green;
+    color: #003300;
     font-weight: bold;
     padding: 10px;
     display: block;
@@ -44,7 +43,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: darkgreen;
+    color: #003300;
 }
 
 .mobile-nav {
@@ -63,20 +62,20 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('backgroundimage.jpg') no-repeat center center/cover;
+    background: url('bg.jpg') no-repeat center center/cover;
     text-align: center;
-    color: white;
+    color: #003300;
 }
 
 .welcome .content {
-    background: rgba(0, 0, 0, 0.5); /* Black background with opacity for better readability */
+    background: none(0, 0, 0, 0.5); /* Black background with opacity for better readability */
     padding: 20px;
     border-radius: 15px;
 }
 
 .welcome h1 {
     font-size: 3em;
-    color: yellow; /* Light Yellow text color */
+    color: #003300; /* Light Yellow text color */
     margin: 0;
     font-family: 'Arial Black', sans-serif;
 }
@@ -89,8 +88,8 @@ nav ul li a:hover {
 
 button.learn-more {
     padding: 15px 30px;
-    background-color: lightyellow; /* Light Yellow background */
-    color: green; /* Green text color */
+    background-color: rgb(255, 255, 255); /* Light Yellow background */
+    color: #003300; /* Green text color */
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -115,7 +114,7 @@ button.learn-more:hover {
     width: 250px;
     height: 100%;
     background-color: white; /* White background */
-    color: green; /* Club color */
+    color: #003300; /* Club color */
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     text-align: left;
@@ -150,7 +149,7 @@ button.learn-more:hover {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: rgb(19, 80, 19); /* Club color */
+    color: #003300(19, 80, 19); /* Club color */
     font-weight: bold;
     display: block;
     padding: 10px;
@@ -163,7 +162,7 @@ button.learn-more:hover {
 
 .sidebar ul li a:hover {
     background-color: yellow; /* Club color */
-    color: green; /* Club color */
+    color: #003300; /* Club color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -176,7 +175,7 @@ button.learn-more:hover {
     padding: 15px;
     width: 100%;
     background-color: yellow; /* Club color */
-    color: green; /* Club color */
+    color: #003300; /* Club color */
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -232,17 +231,32 @@ button.learn-more:hover {
     }
 
     #hamburger {
+        color:#003300;
         display: block; /* Show the hamburger icon */
         position: absolute;
-        right: 20px;
-        top: 15px;
+        right: 30px;
+        top: 40px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 10; /* Ensure it stays on top of other elements */
     }
+    
+    #hamburger span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #ffee00; /* Color of the lines */
+        margin: 6px 0; /* Space between the lines */
+        transition: all 0.3s ease; /* Smooth transition for potential animations */
+    }
+    
 }
 
 /* News Section Styles */
 .news {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #fffb00;
 }
 
 .news-container {
@@ -254,7 +268,7 @@ button.learn-more:hover {
 .news h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #333;
+    color: #003300;
     font-family: 'Verdana', sans-serif;
 }
 
@@ -288,13 +302,13 @@ button.learn-more:hover {
 .news-content h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333;
+    color: #003300;
     font-family: 'Verdana', sans-serif;
 }
 
 .news-content p {
     font-size: 1em;
-    color: #666;
+    color: #003300    ;
     font-family: 'Verdana', sans-serif;
 }
 
@@ -312,4 +326,163 @@ button.learn-more:hover {
         width: 50%;
         padding: 20px 30px;
     }
+}
+
+#matches {
+    padding: 20px;
+    background: linear-gradient(to bottom right, #f1ff26, #f1ff26);
+    color: #fff;
+    overflow: hidden; /* Ensure no horizontal overflow */
+}
+
+.matches-title {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #003300; /* Club color or any preferred color */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matches-title .fa-calendar {
+    margin-right: 10px;
+    font-size: 1.0em;
+}
+
+
+.fixture-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #ffffff;
+    color: #003300;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 0.3s, color 0.3s, transform 0.3s, font-size 0.3s;
+}
+
+.tab-button.active {
+    background: #003300;
+    color: #fff;
+    transform: scale(1.1); /* Slightly increase the size */
+    font-size: 1.1em; /* Slightly increase the font size */
+}
+
+
+.fixtures-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.fixture-card {
+    background: #fff;
+    color: #003300;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    scroll-snap-align: start;
+}
+
+.fixture-date {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.fixture-result {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.score {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #003300; /* Add border */
+    border-radius: 5px; /* Optional: add rounded corners */
+    display: inline-block; /* Ensure it fits around the text */
+}
+
+
+.match-centre-button {
+    display: inline-block;
+    background: #003300;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.match-centre-button:hover {
+    background: #05bd05
+    ;
+}
+
+@media (max-width: 768px) {
+    .fixtures-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .fixture-card {
+        width: 80%; /* Adjust width for better viewing on smaller screens */
+        margin: 10px 10px 10px 0; /* Adjust margin for better spacing */
+    }
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-caption {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    color: #134013; /* Dark green color */
+    padding-top: 10px;
 }
