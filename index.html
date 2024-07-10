@@ -16,7 +16,7 @@
         <ul>
             <li><a href="#home"><i class="fas fa-home icon"></i> Home</a></li>
             <li><a href="#news"><i class="fas fa-newspaper icon"></i> News</a></li>
-            <li><a href="#fixtures"><i class="fas fa-calendar-alt icon"></i> Fixtures</a></li>
+            <li><a href="#matches"><i class="fas fa-calendar-alt icon"></i> Matches</a></li>
             <li><a href="#team"><i class="fas fa-users icon"></i> Team</a></li>
             <li><a href="#gallery"><i class="fas fa-image icon"></i> Gallery</a></li>
             <li><a href="#contact"><i class="fas fa-envelope icon"></i> Contact</a></li>
@@ -30,7 +30,7 @@
     <ul>
         <li><a href="#home"><i class="fas fa-home icon"></i> Home</a></li>
         <li><a href="#news"><i class="fas fa-newspaper icon"></i> News</a></li>
-        <li><a href="#fixtures"><i class="fas fa-calendar-alt icon"></i> Fixtures</a></li>
+        <li><a href="#matches"><i class="fas fa-calendar-alt icon"></i> Matches</a></li>
         <li><a href="#team"><i class="fas fa-users icon"></i> Team</a></li>
         <li><a href="#gallery"><i class="fas fa-image icon"></i> Gallery</a></li>
         <li><a href="#contact"><i class="fas fa-envelope icon"></i> Contact</a></li>
@@ -74,6 +74,84 @@
             </div>
         </div>
     </section>
+
+    <section id="matches">
+        <div class="matches-title">
+            <i class="fa fa-calendar"></i> Matches
+        </div>
+        <div class="fixture-tabs">
+            <button class="tab-button active" data-tab="fixtures">Fixtures</button>
+            <button class="tab-button" data-tab="results">Results</button>
+            <button class="tab-button" data-tab="highlights">Highlights</button>
+        </div>
+        <div class="fixtures-container" id="fixtures-content">
+            <div class="fixture-card">
+                <div class="fixture-date">
+                    <span>SUN 19 MAY 2024</span>
+                    <p></p> <!-- Added paragraph -->
+                    <span>Nigerian League</span>
+                </div>
+                <div class="fixture-result">
+                    <div class="team">
+                        <img src="yarmalight_logo.jpg.png" alt="Yarmalight">
+                        <span>Yarmalight</span>
+                    </div>
+                    <div class="score">
+                        <span>17:30</span>
+                    </div>
+                    <div class="team">
+                        <img src="bournemouth-logo.png" alt="Bournemouth">
+                        <span>Bournemouth</span>
+                    </div>
+                </div>
+                <a href="#" class="match-centre-button">Match Centre &rarr;</a>
+            </div>
+            <!-- Add more fixture cards as needed -->
+            </div>
+            <div class="fixtures-container" id="results-content" style="display: none;">
+                <div class="fixture-card">
+                    <div class="fixture-date">
+                        <span>SAT 20 MAY 2024</span>
+                        <p></p> <!-- Added paragraph -->
+                        <span>PREMIER LEAGUE</span>
+                    </div>
+                    <div class="fixture-result">
+                        <div class="team">
+                            <img src="yarmalight_logo.jpg.png" alt="Yarmalight">
+                            <span>Yarmalight</span>
+                        </div>
+                        <div class="score">
+                            <span>1 - 0</span>
+                        </div>
+                        <div class="team">
+                            <img src="domalogo.png" alt="Doma United">
+                            <span>Doma Utd</span>
+                        </div>
+                    </div>
+                    <a href="#" class="match-centre-button">Match Centre &rarr;</a>
+                </div>
+                <!-- Add more result cards as needed -->
+            </div>
+            <div class="fixtures-container" id="highlights-content" style="display: none;">
+                <div class="fixture-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/videoID1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <span>Yarmalight vs Bournemouth Highlights</span>
+                    </div>
+                </div>
+                <div class="fixture-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/videoID2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-caption">
+                        <span>Yarmalight vs Arsenal Highlights</span>
+                    </div>
+                </div>
+            </div>            
+    </section>
+    
 
 </main>
 
